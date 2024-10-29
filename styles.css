@@ -1,0 +1,170 @@
+/*importar uma fonte*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.imagens {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.circle-orange {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 10%;
+}
+.circle-purple img{
+    width: 100%;
+    height: 100%;
+    top: 60%;
+    left: 10%;
+}
+.circle-red {
+    width: 20%;
+    height: 50%;
+    top: 20%;
+    left: 20%;
+}
+
+.imagens img {
+    width: 50%;
+    height: 50%;
+}
+
+.container {
+    position: relative;
+}
+
+.login {
+    display: flex;
+    background: rgba(100, 83, 83, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.esquerda, .direita {
+    width: 50%;
+    padding: 20px;
+    color: white;
+}
+
+.esquerda{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-top: 25%;
+}
+
+.direita {
+    text-align: center;
+}
+.direita h2{
+    text-align: center;
+    margin-bottom: 20%;
+
+}
+.esquerda   h2 {
+    margin-bottom: 20%;
+    font-weight: bold;
+}
+.esquerda p {
+    text-decoration: underline;
+}
+.criar-conta, .login-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.input-login {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-login label {
+    font-size: 12px;
+    color: #fafafa;
+}
+
+.input-login input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(190, 164, 164, 0.2);
+    background-color: rgba(104, 87, 87, 0.1);
+    color: rgb(87, 80, 80);
+    font-size: 14px;
+}
+.logar  {
+    border-radius: 90%;
+    margin-bottom: 20%;
+    margin-left: 15%;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(10, 10, 10, 0.2);
+    background-color: rgba(3, 1, 1, 0.1);
+    color: rgb(15, 4, 4);
+    font-size: 14px;
+
+}
+.lembrar {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #665656;
+    margin-bottom: 10px;
+}
+
+.lembrar input {
+    margin-right: 5px;
+}
+
+.icones {
+    display: block;    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icones img {
+    width: 15px;
+    height: 15px;
+}
+
+.login {
+    background-image: url(/img/noise3.jpg);
+    background-size: cover;
+    opacity: 0.7;
+}
