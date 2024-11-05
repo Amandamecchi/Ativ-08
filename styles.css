@@ -17,15 +17,6 @@ body {
 .background {
     position: absolute;
     width: 100%;
-    height: 100%;overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-}
-.imagens {
-    position: absolute;
-    width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
@@ -33,31 +24,43 @@ body {
     justify-content: center;
     z-index: -1;
 }
-.circle-orange {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 30%;
-    left: 10%;
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
 }
-.circle-purple img{
-    width: 100%;
-    height: 100%;
-    top: 60%;
-    left: 10%;
-}
-.circle-red {
-    width: 20%;
-    height: 50%;
-    top: 20%;
-    left: 20%;
+.orange {
+width: 25rem;
+height: 25rem;
+background-color: orange;
+background: linear-gradient(to bottom orange, red);
+top: 50%;
+left: 15%;
 }
 
-.imagens img {
-    width: 50%;
-    height: 50%;
+.purple {
+    width: 14em;
+    height: 14rem;
+    background-color: rgb(123, 14, 187);
+    top: 8%;
+    left: 38%;
 }
 
+.red {
+    width: 20em;
+    height: 20rem;
+    background-color: rgb(223, 9, 55);
+    top: 35%;
+    right: 22%;
+}
+
+.green {
+    width: 7rem;
+    height: 7rem;
+    background-color: rgb(15, 172, 133);
+    top: 59%;
+    left: 45%;
+}
 .container {
     position: relative;
 }
@@ -65,31 +68,32 @@ body {
 .login {
     display: flex;
     background: rgba(100, 83, 83, 0.3);
-    padding: 20px;
+    padding: 40px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
     position: relative;
+    width: 100vh;
 }
 
 .esquerda, .direita {
-    width: 50%;
-    padding: 20px;
+    padding: 10px;
     color: white;
 }
 
 .esquerda{
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    margin-top: 25%;
+    font-size: 1.5rem;
+    width: 35%;
 }
 
 .direita {
     text-align: center;
+    width: 65%;
 }
 .direita h2{
     text-align: center;
     margin-bottom: 20%;
-
 }
 .esquerda   h2 {
     margin-bottom: 20%;
@@ -97,6 +101,7 @@ body {
 }
 .esquerda p {
     text-decoration: underline;
+    margin-top: 10rem;
 }
 .criar-conta, .login-btn {
     background-color: #333;
@@ -128,17 +133,16 @@ body {
     font-size: 14px;
 }
 .logar  {
-    border-radius: 90%;
-    margin-bottom: 20%;
-    margin-left: 15%;
-    width: 100%;
+    border-radius: 50%;
+    margin-left: 18rem;
+    margin-bottom: 15%;
+    width: 30%;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 100px;
     border: 1px solid rgba(10, 10, 10, 0.2);
     background-color: rgba(3, 1, 1, 0.1);
     color: rgb(15, 4, 4);
     font-size: 14px;
-
 }
 .lembrar {
     display: flex;
@@ -164,7 +168,7 @@ body {
 }
 
 .login {
-    background-image: url(/img/noise3.jpg);
+    background-image: url();
     background-size: cover;
     opacity: 0.7;
 }
